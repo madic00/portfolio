@@ -1,0 +1,40 @@
+@media screen and (max-width: 992px) {
+  .testBlock {
+    width: 82% !important;
+  }
+  /* CONTACT */
+  #contactLeft, #contactRight {
+    width: 100% !important;
+  }
+  #contactLeft textarea, #contactRight textarea {
+    width: 85% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* ABOUT */
+  #timeline::after {
+    left: 31px;
+  }
+  .timeItem {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .timeItem::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #2098D1 transparent transparent;
+  }
+  .left::after, .right::after {
+    left: 15px;
+  }
+  .right {
+    left: 0%;
+  }
+  footer div.center {
+    display: block !important;
+  }
+}
+/*# sourceMappingURL=mediaQueries.css.map */
