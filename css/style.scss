@@ -87,6 +87,7 @@ nav.center {
     
     ul li:hover {
         color: #2098D1;
+        transition: color 0.3s;
     }
 
 }
@@ -123,14 +124,13 @@ nav.center {
 #services {
     background-color: #e9ecef;
     min-height: 500px;
-    padding-bottom: 100px;
 }
 
 .sectionTitle {
     text-align: center;
     font-size: 2.4rem;
-    margin-bottom: 75px;
-    padding-top: 100px;
+    margin-bottom: 60px;
+    padding-top: 60px;
 }
 
 #servicesWrapper {
@@ -139,13 +139,12 @@ nav.center {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 100px;
     
     .serviceItem {
         text-align: center;
         // margin: 10px 20px;
         // flex: 1 0 20em;
-        width: 30%;
+        width: 33%;
 
         h4 {
             font-size: 22px;
@@ -343,7 +342,7 @@ nav.center {
 
 /* HAPPY CLIENTS STATS */
 #happyClients {
-    height: 400px;
+    height: 350px;
     background-image: url("../img/clients.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -351,19 +350,10 @@ nav.center {
     color: #fff;
     position: relative;
 
-    #transparent {
-        background-color: rgba(0, 0, 0, 0.6);
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-    }
-
     #stats {
         display: flex;
         justify-content: space-around;
-        padding-top: 150px;
+        padding-top: 120px;
 
         .statItem {
             text-align: center;
@@ -380,10 +370,18 @@ nav.center {
     }
 }
 
+.transparent {
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+
 
 /* TESTIMONIALS  */
 #testimonials {
-    min-height: 400px;
     font-size: 20px;
     /*
     background-color: #2089D1;
@@ -392,13 +390,13 @@ nav.center {
 
 #testWrapper {
     position: relative;
-    padding-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 
     .testBlock {
         display: none;
         width: 70%;
         margin: 0px auto;
+        margin-top: 40px;
 
         img {
             border-radius: 50%;
@@ -428,7 +426,7 @@ nav.center {
     #prev, #next {
         cursor: pointer;
         position: absolute;
-        top: 25%;
+        top: -3%;
         width: auto;
         padding: 24px 6%;
         color: #2098D1;
@@ -452,19 +450,30 @@ nav.center {
 
 /* CONTACT */
 #contact {
-    min-height: 400px;
+    min-height: 500px;
     background-image: url("../img/contact.jpg");
     background-size: cover;
     background-position: center;
     color: #fff;
     padding-bottom: 50px;
+    position: relative;
 
     input, textarea {
         padding: 5px 20px;
-        background-color: #fff;
-        border: 1px solid #ced4da;
-        border-radius: 3px;
+        // border-radius: 3px;
         font-size: 14px;
+        color: #fff;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #fff;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #fff;
+        }
     }
 
     #contactLeft {
@@ -487,7 +496,6 @@ nav.center {
             height: 190px;
             padding: 10px 20px;
             resize: none;
-            border: 1px solid #ced4da;
             border-radius: 3px;
         }
     }
@@ -502,10 +510,11 @@ nav.center {
             background-color: #2098D1;
             border: 1px solid #2089D1;
             border-radius: 7px;
-            padding: 20px 40px;
+            padding: 15px 25px;
             border: none;
-            font-size: 18px;
+            font-size: 14px;
             color: #fff;
+            cursor: pointer;
 
             &:hover {
                 background-color: #045F8C;
@@ -539,7 +548,7 @@ footer {
         }
 
         i {
-            font-size: 3em;
+            font-size: 2em;
         }
 
     }
