@@ -28,10 +28,11 @@ body {
 /* HEADER */
 #headerWrapper {
   width: 100%;
-  height: 100vh;
-  background-image: url("../img/contact.jpg");
+  min-height: 100vh;
+  background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
 }
 
 #navWrapper {
@@ -133,7 +134,7 @@ nav.center {
 
 .sectionTitle {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin-bottom: 60px;
   padding-top: 60px;
 }
@@ -174,7 +175,7 @@ nav.center {
 }
 
 /* PORTFOLIO */
-#portfolio {
+#portfolioWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,7 +492,6 @@ nav.center {
   height: 190px;
   padding: 10px 20px;
   resize: none;
-  border-radius: 3px;
 }
 
 #contact #send {
