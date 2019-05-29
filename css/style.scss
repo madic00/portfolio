@@ -140,6 +140,7 @@ nav.center {
     min-height: 500px;
     color: #636c7a;
     padding-bottom: 60px;
+    position: relative;
 }
 
 .sectionTitle {
@@ -413,10 +414,6 @@ nav.center {
         font-size: 24px;
         border-radius: 0 3px 3px 0;
 
-        /*
-        &:hover {
-            // font-size: 30px;
-        } */
     }
 
     #next {
@@ -430,6 +427,7 @@ nav.center {
 /* CONTACT */
 #contact {
     min-height: 500px;
+    width: 100%;
     background-image: url("../img/contact.jpg");
     background-size: cover;
     background-position: center;
@@ -439,7 +437,6 @@ nav.center {
 
     input, textarea {
         padding: 5px 20px;
-        // border-radius: 3px;
         font-size: 14px;
         color: #fff;
         background: none;
@@ -460,7 +457,7 @@ nav.center {
         width: 50%;
         
         input {
-            width: 85%;
+            width: 90%;
             height: 50px;
             margin: 0px 0px 20px;
         }
@@ -468,10 +465,10 @@ nav.center {
 
     #contactRight {
         float: right;
-        width: 50%;
+        width: 45%;
 
         textarea {
-            width: 100%;
+            width: 90%;
             height: 190px;
             padding: 10px 20px;
             resize: none;
@@ -480,8 +477,8 @@ nav.center {
 
     #send {
         text-align: center;
-        width: 300px;
-        margin: 20px auto 0px;
+        width: 100%;
+        margin-top: 20px;
         
         button {
             text-align: center;
