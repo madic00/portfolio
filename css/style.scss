@@ -25,20 +25,30 @@ body {
     clear: both;
 }
 
+.transparent {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
 /* HEADER */
 #headerWrapper {
     width: 100%;
-    // border-top: 3px solid #2098D1;
-    min-height: 100vh;
+    height: 100vh;
     background-image: url('../img/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    position: relative;
 }
 
 #navWrapper {
     width: 100%;
-    box-shadow: 0 2px 2px -1px rgba(0,0,0,.2);
 }
 
 .center {
@@ -347,15 +357,6 @@ nav.center {
         }
     }
 }
-
-.transparent {
-        background-color: rgba(0, 0, 0, 0.6);
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-    }
 
 
 /* TESTIMONIALS  */
