@@ -445,6 +445,8 @@ nav.center {
 
         &:focus {
             outline: none;
+            transition: border-color 0.5s;
+            border-color: #2098D1;
         }
 
         &::placeholder {
@@ -721,6 +723,10 @@ footer {
         }
     }
 
+    .portfolioItem .overlay{
+        font-size: 16px;
+        padding: 15px;
+    }
 
     footer div.center {
         align-items: center;

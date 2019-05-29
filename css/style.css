@@ -452,6 +452,9 @@ nav.center {
 
 #contact input:focus, #contact textarea:focus {
   outline: none;
+  -webkit-transition: border-color 0.5s;
+  transition: border-color 0.5s;
+  border-color: #2098D1;
 }
 
 #contact input::-webkit-input-placeholder, #contact textarea::-webkit-input-placeholder {
@@ -737,6 +740,10 @@ footer div.center i {
   }
   #navWrapper #logo {
     padding-top: 72px;
+  }
+  .portfolioItem .overlay {
+    font-size: 16px;
+    padding: 15px;
   }
   footer div.center {
     -webkit-box-align: center;
