@@ -109,8 +109,19 @@ nav.center {
 
 /* INITIAL INFO */
 #smallInfo {
-  margin-top: 50px;
+  margin-top: 60px;
   line-height: 65px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #smallInfo .title {
@@ -118,17 +129,16 @@ nav.center {
   line-height: 2em;
 }
 
-#smallInfo .desc {
-  font-size: 2em;
-  line-height: 2em;
+#smallInfo #viewMore {
+  margin-top: 12%;
 }
 
-#smallInfo a, #smallInfo i {
+#smallInfo #viewMore a, #smallInfo #viewMore i {
   font-size: 1.5em;
   color: #2098D1;
 }
 
-#smallInfo i {
+#smallInfo #viewMore i {
   margin-top: 20px;
   -webkit-animation: bounceDown 2s infinite;
           animation: bounceDown 2s infinite;
@@ -136,9 +146,8 @@ nav.center {
 
 /* SERVICES */
 #services {
-  background-color: #222831;
+  background-color: #eee;
   min-height: 500px;
-  color: #636c7a;
   padding-bottom: 60px;
   position: relative;
 }
@@ -164,7 +173,12 @@ nav.center {
 
 #servicesWrapper .serviceItem {
   text-align: center;
-  width: 33%;
+  width: 28%;
+  background: #fff;
+  padding: 20px 20px 30px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 #servicesWrapper .serviceItem h4 {
@@ -264,6 +278,7 @@ nav.center {
   position: relative;
   background-color: inherit;
   width: 50%;
+  color: #f3f9fb;
 }
 
 .timeItem::after {
@@ -731,18 +746,25 @@ footer div.center i {
 }
 
 @media screen and (max-width: 480px) {
+  #headerWrapper {
+    height: 100%;
+  }
   #navWrapper {
     height: 240px;
   }
   #navWrapper #navLinks ul li {
     display: block;
     margin: 10px 0px;
+    font-size: 16px;
   }
   #navWrapper #logo {
     padding-top: 72px;
   }
+  #navWrapper #logo h1 {
+    font-size: 1.2rem;
+  }
   .portfolioItem .overlay {
-    font-size: 16px;
+    font-size: 20px;
     padding: 15px;
   }
   footer div.center {

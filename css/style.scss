@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
+
+$darkBlue: #113f67;
+$lightBlue: #2098D1;
+$lightGray: #f3f9fb;
+
 * {
     margin: 0px;
     padding: 0px;
@@ -100,7 +105,7 @@ nav.center {
     }
     
     ul li:hover {
-        color: #2098D1;
+        color: $lightBlue;
         transition: color 0.3s;
     }
 
@@ -110,35 +115,46 @@ nav.center {
 /* INITIAL INFO */
 
 #smallInfo {
-    margin-top: 50px;
+    margin-top: 60px;
     line-height: 65px;
+    text-align: center;
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
     .title {
         font-size: 3em;
         line-height: 2em;
     }
     
-    .desc {
-        font-size: 2em;
-        line-height: 2em;
-    }
-    a, i {
-        font-size: 1.5em;
-        color: #2098D1;
-    }
+    // .desc {
+    //     font-size: 2em;
+    //     line-height: 2em;
+    // }
 
-    i {
-        margin-top: 20px;
-        animation: bounceDown 2s infinite;
+    #viewMore {
+        margin-top: 12%;
+        // position: absolute;
+        // bottom: 20px;
+
+        a, i {
+            font-size: 1.5em;
+            color: $lightBlue;
+        }
+    
+        i {
+            margin-top: 20px;
+            animation: bounceDown 2s infinite;
+        }
     }
 }
 
 /* SERVICES */
 
 #services {
-    background-color: #222831;
+    background-color: #eee;
     min-height: 500px;
-    color: #636c7a;
     padding-bottom: 60px;
     position: relative;
 }
@@ -159,9 +175,12 @@ nav.center {
     
     .serviceItem {
         text-align: center;
-        // margin: 10px 20px;
         // flex: 1 0 20em;
-        width: 33%;
+        width: 28%;
+        background: #fff;
+        padding: 20px 20px 30px;
+        border-radius: 3px;
+        box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
 
         h4 {
             font-size: 22px;
@@ -179,7 +198,7 @@ nav.center {
         border-radius: 50%;
         padding: 30px;
         font-size: 44px;
-        color: #2098D1;
+        color: $lightBlue;
     }
 }
 
@@ -244,7 +263,7 @@ nav.center {
       content: '';
       position: absolute;
       width: 6px;
-      background-color: #2098D1;
+      background-color: $lightBlue;
       top: 0;
       bottom: 0;
       left: 50%;
@@ -257,6 +276,8 @@ nav.center {
   position: relative;
   background-color: inherit;
   width: 50%;
+  color: $lightGray;
+
 
   &::after {
       content: '';
@@ -286,7 +307,7 @@ nav.center {
       right: 30px;
       border: medium solid white;
       border-width: 10px 0 10px 10px;
-      border-color: transparent transparent transparent #2098D1;
+      border-color: transparent transparent transparent $lightBlue;
 
   }
 }
@@ -304,7 +325,7 @@ nav.center {
       left: 30px;
       border: medium solid white;
       border-width: 10px 10px 10px 0;
-      border-color: transparent #2098D1 transparent transparent;
+      border-color: transparent $lightBlue transparent transparent;
 
   }
 
@@ -315,7 +336,7 @@ nav.center {
 
 .timeInfo {
   padding: 20px 30px;
-  background-color: #2098D1;
+  background-color: $lightBlue;
   position: relative;
   border-radius: 6px;
 
@@ -348,7 +369,7 @@ nav.center {
             text-align: center;
 
             span {
-                color: #2098D1;
+                color: $lightBlue;
                 font-size: 2.5rem;
             }
             
@@ -409,7 +430,7 @@ nav.center {
         top: -3%;
         width: auto;
         padding: 24px 6%;
-        color: #2098D1;
+        color: $lightBlue;
         font-weight: bold;
         font-size: 24px;
         border-radius: 0 3px 3px 0;
@@ -446,7 +467,7 @@ nav.center {
         &:focus {
             outline: none;
             transition: border-color 0.5s;
-            border-color: #2098D1;
+            border-color: $lightBlue;
         }
 
         &::placeholder {
@@ -484,7 +505,7 @@ nav.center {
         
         button {
             text-align: center;
-            background-color: #2098D1;
+            background-color: $lightBlue;
             border: 1px solid #2089D1;
             border-radius: 7px;
             padding: 15px 25px;
@@ -668,7 +689,7 @@ footer {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #2098D1 transparent transparent;
+    border-color: transparent $lightBlue transparent transparent;
 }
 
   .left::after, .right::after {
@@ -710,21 +731,30 @@ footer {
 
 @media screen and (max-width: 480px) {
     
+    #headerWrapper {
+        height: 100%;
+    }
+    
     #navWrapper {
         height: 240px;
 
         #navLinks ul li {
             display: block;
             margin: 10px 0px;
+            font-size: 16px;
         }
 
         #logo {
             padding-top: 72px;
+
+            h1 {
+                font-size: 1.2rem;
+            }
         }
     }
 
     .portfolioItem .overlay{
-        font-size: 16px;
+        font-size: 20px;
         padding: 15px;
     }
 
