@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 
-$darkBlue: #113f67;
 $lightBlue: #2098D1;
 $lightGray: #f3f9fb;
 
@@ -68,18 +67,12 @@ nav.center {
 }
 
 #logo {
-    // float: left;
     padding-top: 25px;
     width: 290px;
     
     h1 {
         font-size: 1.8rem;
-    }
-    
-    p {
-        font-size: 18px;
-        margin: 5px 0px;
-        color: #aaa;
+        padding-top: 5px;
     }
 
     img {
@@ -93,7 +86,6 @@ nav.center {
 
 
 #navLinks {
-    // float: right;
     padding-top: 33px;
     margin-left: auto;
     
@@ -118,7 +110,6 @@ nav.center {
     margin-top: 60px;
     line-height: 65px;
     text-align: center;
-    // position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -127,16 +118,9 @@ nav.center {
         font-size: 3em;
         line-height: 2em;
     }
-    
-    // .desc {
-    //     font-size: 2em;
-    //     line-height: 2em;
-    // }
 
     #viewMore {
         margin-top: 12%;
-        // position: absolute;
-        // bottom: 20px;
 
         a, i {
             font-size: 1.5em;
@@ -175,11 +159,10 @@ nav.center {
     
     .serviceItem {
         text-align: center;
-        // flex: 1 0 20em;
         width: 28%;
         background: #fff;
         padding: 20px 20px 30px;
-        border-radius: 3px;
+        border-radius: 6px;
         box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
 
         h4 {
@@ -210,7 +193,6 @@ nav.center {
 }
 
 .portfolioItem {
-    // flex: 1 0 24rem;
     width: 33%;
     overflow: hidden;
     position: relative;
@@ -384,9 +366,6 @@ nav.center {
 /* TESTIMONIALS  */
 #testimonials {
     font-size: 20px;
-    /*
-    background-color: #2089D1;
-    color: #fff;*/
 }
 
 #testWrapper {
@@ -573,8 +552,8 @@ footer {
   }
 }
 
-// @import "mediaQueries.scss";
 
+/* MEDIA QUERIES */ 
 @media screen and (max-width: 1130px) {
     /* TESTIMONIALS */
 
@@ -606,7 +585,8 @@ footer {
     }
 
     #servicesWrapper .serviceItem:last-child {
-        width: 100%;
+        width: 48%;
+        margin-top: 30px;
     }
     
     .portfolioItem {
@@ -663,9 +643,10 @@ footer {
   #servicesWrapper {
       flex-direction: column;
 
-      .serviceItem {
+      .serviceItem, .serviceItem:last-child {
           width: 100%;
           margin: 15px 0px 0px;
+          margin-top: 40px;
       }
   }
 
